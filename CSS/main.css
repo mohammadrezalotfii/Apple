@@ -1,0 +1,2324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* font */
+@font-face {
+  font-family: Roboto;
+  src: url(../font/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto-menu;
+  src: url(../font/Roboto-Medium.ttf);
+}
+/* font */
+
+/* start menu */
+div.menu {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: Roboto;
+  position: fixed;
+  top: 0;
+}
+
+div.menu > nav {
+  width: inherit;
+  height: inherit;
+  text-align: center;
+}
+
+div.menu > nav > ul {
+  width: 1024px;
+  height: 44px;
+  margin: 0 auto;
+  display: inline-block;
+  list-style: none;
+  text-align: left;
+}
+
+div.menu > nav > ul > li {
+  height: 44px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+div.menu > nav > ul > li.menu-item > a {
+  line-height: 44px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  padding: 0px 8px;
+  margin: 0px 8px;
+  color: #323232;
+}
+
+div.menu > nav > ul > li.logo > a {
+  line-height: 44px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 0px 8px;
+  margin: 0px 8px;
+  color: #323232;
+}
+
+div.menu > nav > ul > li.search > a {
+  line-height: 44px;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding: 0px 8px;
+  margin: 0px 8px;
+  color: #323232;
+}
+
+div.menu > nav > ul > li.shoping > a {
+  line-height: 44px;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding: 0px 8px;
+  margin: 0px 8px;
+  color: #323232;
+}
+
+/* start menu store */
+div.menu > nav > ul > li.menu-item > div.submenu-store {
+  width: 100vw;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: all 300ms linear;
+  overflow: hidden;
+}
+
+div.menu > nav > ul > li.menu-item:hover > div.submenu-store {
+  height: 340px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-store > div.content {
+  width: 1024px;
+  height: inherit;
+  margin: 0px auto;
+  text-align: left;
+  padding-top: 24px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-store > div.content a {
+  text-decoration: none;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-store > div.content p {
+  font-size: 12px;
+  color: #747474;
+  padding: 0px 0px 24px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-store
+  > div.content
+  > div.left {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  margin-right: 48px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-store
+  > div.content
+  > div.left
+  a {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+  text-decoration: none;
+  padding: 0px 0px 8px 0px;
+  transition: all 300ms linear;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-store
+  > div.content
+  > div.left
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-store
+  > div.content
+  > div.center {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-store
+  > div.content
+  > div.center
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-store
+  > div.content
+  > div.center
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-store
+  > div.content
+  > div.right {
+  width: 20%;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-store
+  > div.content
+  > div.right
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-store
+  > div.content
+  > div.right
+  a:hover {
+  color: #131313;
+}
+/* end menu store */
+
+/* start menu mac */
+div.menu > nav > ul > li.menu-item > div.submenu-mac {
+  width: 100vw;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: all 300ms linear;
+  overflow: hidden;
+}
+
+div.menu > nav > ul > li.menu-item:hover > div.submenu-mac {
+  height: 440px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-mac > div.content {
+  width: 1024px;
+  height: inherit;
+  margin: 0px auto;
+  text-align: left;
+  padding-top: 24px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-mac > div.content a {
+  text-decoration: none;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-mac > div.content p {
+  font-size: 12px;
+  color: #747474;
+  padding: 0px 0px 24px 0px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-mac > div.content > div.left {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  margin-right: 48px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-mac
+  > div.content
+  > div.left
+  a {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+  text-decoration: none;
+  padding: 0px 0px 8px 0px;
+  transition: all 300ms linear;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-mac
+  > div.content
+  > div.left
+  a.onder-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #494949;
+  padding: 16px 0px 0px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-mac
+  > div.content
+  > div.left
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-mac
+  > div.content
+  > div.center {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-mac
+  > div.content
+  > div.center
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-mac
+  > div.content
+  > div.center
+  a:hover {
+  color: #131313;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-mac > div.content > div.right {
+  width: 20%;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-mac
+  > div.content
+  > div.right
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-mac
+  > div.content
+  > div.right
+  a:hover {
+  color: #131313;
+}
+/* end menu mac */
+
+/* start menu iPad */
+div.menu > nav > ul > li.menu-item > div.submenu-iPad {
+  width: 100vw;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: all 300ms linear;
+  overflow: hidden;
+}
+
+div.menu > nav > ul > li.menu-item:hover > div.submenu-iPad {
+  height: 440px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-iPad > div.content {
+  width: 1024px;
+  height: inherit;
+  margin: 0px auto;
+  text-align: left;
+  padding-top: 24px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-iPad > div.content a {
+  text-decoration: none;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-iPad > div.content p {
+  font-size: 12px;
+  color: #747474;
+  padding: 0px 0px 24px 0px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-iPad > div.content > div.left {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  margin-right: 48px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPad
+  > div.content
+  > div.left
+  a {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+  text-decoration: none;
+  padding: 0px 0px 8px 0px;
+  transition: all 300ms linear;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPad
+  > div.content
+  > div.left
+  a.onder-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #494949;
+  padding: 16px 0px 0px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPad
+  > div.content
+  > div.left
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPad
+  > div.content
+  > div.center {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPad
+  > div.content
+  > div.center
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPad
+  > div.content
+  > div.center
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPad
+  > div.content
+  > div.right {
+  width: 20%;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPad
+  > div.content
+  > div.right
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPad
+  > div.content
+  > div.right
+  a:hover {
+  color: #131313;
+}
+/* end menu iPad */
+
+/* start menu iPhone */
+div.menu > nav > ul > li.menu-item > div.submenu-iPhone {
+  width: 100vw;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: all 300ms linear;
+  overflow: hidden;
+}
+
+div.menu > nav > ul > li.menu-item:hover > div.submenu-iPhone {
+  height: 410px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-iPhone > div.content {
+  width: 1024px;
+  height: inherit;
+  margin: 0px auto;
+  text-align: left;
+  padding-top: 24px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-iPhone > div.content a {
+  text-decoration: none;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-iPhone > div.content p {
+  font-size: 12px;
+  color: #747474;
+  padding: 0px 0px 24px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPhone
+  > div.content
+  > div.left {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  margin-right: 48px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPhone
+  > div.content
+  > div.left
+  a {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+  text-decoration: none;
+  padding: 0px 0px 8px 0px;
+  transition: all 300ms linear;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPhone
+  > div.content
+  > div.left
+  a.onder-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #494949;
+  padding: 16px 0px 0px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPhone
+  > div.content
+  > div.left
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPhone
+  > div.content
+  > div.center {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPhone
+  > div.content
+  > div.center
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPhone
+  > div.content
+  > div.center
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPhone
+  > div.content
+  > div.right {
+  width: 20%;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPhone
+  > div.content
+  > div.right
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-iPhone
+  > div.content
+  > div.right
+  a:hover {
+  color: #131313;
+}
+/* end menu iPhone */
+
+/* start menu Watch */
+div.menu > nav > ul > li.menu-item > div.submenu-Watch {
+  width: 100vw;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: all 300ms linear;
+  overflow: hidden;
+}
+
+div.menu > nav > ul > li.menu-item:hover > div.submenu-Watch {
+  height: 410px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Watch > div.content {
+  width: 1024px;
+  height: inherit;
+  margin: 0px auto;
+  text-align: left;
+  padding-top: 24px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Watch > div.content a {
+  text-decoration: none;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Watch > div.content p {
+  font-size: 12px;
+  color: #747474;
+  padding: 0px 0px 24px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Watch
+  > div.content
+  > div.left {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  margin-right: 48px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Watch
+  > div.content
+  > div.left
+  a {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+  text-decoration: none;
+  padding: 0px 0px 8px 0px;
+  transition: all 300ms linear;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Watch
+  > div.content
+  > div.left
+  a.onder-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #494949;
+  padding: 16px 0px 0px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Watch
+  > div.content
+  > div.left
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Watch
+  > div.content
+  > div.center {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Watch
+  > div.content
+  > div.center
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Watch
+  > div.content
+  > div.center
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Watch
+  > div.content
+  > div.right {
+  width: 20%;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Watch
+  > div.content
+  > div.right
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Watch
+  > div.content
+  > div.right
+  a:hover {
+  color: #131313;
+}
+/* end menu Watch */
+
+/* start menu Vision */
+div.menu > nav > ul > li.menu-item > div.vision {
+  width: fit-content;
+  height: 0px;
+  background-color: white;
+  transition: all 300ms linear;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 0px 0px 4px 4px;
+}
+
+div.menu > nav > ul > li.menu-item:hover > div.vision {
+  height: 110px;
+}
+
+div.menu > nav > ul > li.menu-item > div.vision > div.content {
+  padding: 16px;
+}
+
+div.menu > nav > ul > li.menu-item > div.vision > div.content > a {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #323232;
+  text-decoration: none;
+  padding: 0px 0px 8px 0px;
+  transition: all 300ms linear;
+}
+/* end menu Vision */
+
+/* start menu Airpods */
+div.menu > nav > ul > li.menu-item > div.submenu-Airpods {
+  width: 100vw;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: all 300ms linear;
+  overflow: hidden;
+}
+
+div.menu > nav > ul > li.menu-item:hover > div.submenu-Airpods {
+  height: 350px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Airpods > div.content {
+  width: 1024px;
+  height: inherit;
+  margin: 0px auto;
+  text-align: left;
+  padding-top: 24px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Airpods > div.content a {
+  text-decoration: none;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Airpods > div.content p {
+  font-size: 12px;
+  color: #747474;
+  padding: 0px 0px 24px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Airpods
+  > div.content
+  > div.left {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  margin-right: 48px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Airpods
+  > div.content
+  > div.left
+  a {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+  text-decoration: none;
+  padding: 0px 0px 8px 0px;
+  transition: all 300ms linear;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Airpods
+  > div.content
+  > div.left
+  a.onder-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #494949;
+  padding: 16px 0px 0px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Airpods
+  > div.content
+  > div.left
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Airpods
+  > div.content
+  > div.center {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Airpods
+  > div.content
+  > div.center
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Airpods
+  > div.content
+  > div.center
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Airpods
+  > div.content
+  > div.right {
+  width: 20%;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Airpods
+  > div.content
+  > div.right
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Airpods
+  > div.content
+  > div.right
+  a:hover {
+  color: #131313;
+}
+/* end menu Airpods */
+
+/* start menu TV & Home */
+div.menu > nav > ul > li.menu-item > div.submenu-TV {
+  width: 100vw;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: all 300ms linear;
+  overflow: hidden;
+}
+
+div.menu > nav > ul > li.menu-item:hover > div.submenu-TV {
+  height: 350px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-TV > div.content {
+  width: 1024px;
+  height: inherit;
+  margin: 0px auto;
+  text-align: left;
+  padding-top: 24px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-TV > div.content a {
+  text-decoration: none;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-TV > div.content p {
+  font-size: 12px;
+  color: #747474;
+  padding: 0px 0px 24px 0px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-TV > div.content > div.left {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  margin-right: 48px;
+  vertical-align: top;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-TV > div.content > div.left a {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+  text-decoration: none;
+  padding: 0px 0px 8px 0px;
+  transition: all 300ms linear;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-TV
+  > div.content
+  > div.left
+  a.onder-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #494949;
+  padding: 8px 0px 0px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-TV
+  > div.content
+  > div.left
+  a:hover {
+  color: #131313;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-TV > div.content > div.center {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-TV
+  > div.content
+  > div.center
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-TV
+  > div.content
+  > div.center
+  a:hover {
+  color: #131313;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-TV > div.content > div.right {
+  width: 20%;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-TV
+  > div.content
+  > div.right
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-TV
+  > div.content
+  > div.right
+  a:hover {
+  color: #131313;
+}
+/* end menu TV & Home */
+
+/* start menu Entertainment */
+div.menu > nav > ul > li.menu-item > div.submenu-Entertainment {
+  width: 100vw;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: all 300ms linear;
+  overflow: hidden;
+}
+
+div.menu > nav > ul > li.menu-item:hover > div.submenu-Entertainment {
+  height: 480px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Entertainment > div.content {
+  width: 1024px;
+  height: inherit;
+  margin: 0px auto;
+  text-align: left;
+  padding-top: 24px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Entertainment > div.content a {
+  text-decoration: none;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Entertainment > div.content p {
+  font-size: 12px;
+  color: #747474;
+  padding: 0px 0px 24px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Entertainment
+  > div.content
+  > div.left {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  margin-right: 48px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Entertainment
+  > div.content
+  > div.left
+  a {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+  text-decoration: none;
+  padding: 0px 0px 8px 0px;
+  transition: all 300ms linear;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Entertainment
+  > div.content
+  > div.left
+  a.onder-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #494949;
+  padding: 8px 0px 0px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Entertainment
+  > div.content
+  > div.left
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Entertainment
+  > div.content
+  > div.center {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Entertainment
+  > div.content
+  > div.center
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Entertainment
+  > div.content
+  > div.center
+  a:hover {
+  color: #131313;
+}
+/* end menu Entertainment */
+
+/* start menu Accessories */
+div.menu > nav > ul > li.menu-item > div.submenu-Accessories {
+  width: 100vw;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: all 300ms linear;
+  overflow: hidden;
+}
+
+div.menu > nav > ul > li.menu-item:hover > div.submenu-Accessories {
+  height: 380px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Accessories > div.content {
+  width: 1024px;
+  height: inherit;
+  margin: 0px auto;
+  text-align: left;
+  padding-top: 24px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Accessories > div.content a {
+  text-decoration: none;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Accessories > div.content p {
+  font-size: 12px;
+  color: #747474;
+  padding: 0px 0px 24px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Accessories
+  > div.content
+  > div.left {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  margin-right: 48px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Accessories
+  > div.content
+  > div.left
+  a {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+  text-decoration: none;
+  padding: 0px 0px 8px 0px;
+  transition: all 300ms linear;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Accessories
+  > div.content
+  > div.left
+  a.onder-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #494949;
+  padding: 8px 0px 0px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Accessories
+  > div.content
+  > div.left
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Accessories
+  > div.content
+  > div.center {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Accessories
+  > div.content
+  > div.center
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Accessories
+  > div.content
+  > div.center
+  a:hover {
+  color: #131313;
+}
+/* end menu Accessories */
+
+/* start menu Support */
+div.menu > nav > ul > li.menu-item > div.submenu-Support {
+  width: 100vw;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: all 300ms linear;
+  overflow: hidden;
+}
+
+div.menu > nav > ul > li.menu-item:hover > div.submenu-Support {
+  height: 420px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Support > div.content {
+  width: 1024px;
+  height: inherit;
+  margin: 0px auto;
+  text-align: left;
+  padding-top: 24px;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Support > div.content a {
+  text-decoration: none;
+}
+
+div.menu > nav > ul > li.menu-item > div.submenu-Support > div.content p {
+  font-size: 12px;
+  color: #747474;
+  padding: 0px 0px 24px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Support
+  > div.content
+  > div.left {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  margin-right: 48px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Support
+  > div.content
+  > div.left
+  a {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+  text-decoration: none;
+  padding: 0px 0px 8px 0px;
+  transition: all 300ms linear;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Support
+  > div.content
+  > div.left
+  a.onder-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #494949;
+  padding: 16px 0px 0px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Support
+  > div.content
+  > div.left
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Support
+  > div.content
+  > div.center {
+  width: fit-content;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Support
+  > div.content
+  > div.center
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Support
+  > div.content
+  > div.center
+  a:hover {
+  color: #131313;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Support
+  > div.content
+  > div.right {
+  width: 20%;
+  height: inherit;
+  display: inline-block;
+  padding: 16px;
+  vertical-align: top;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Support
+  > div.content
+  > div.right
+  a {
+  display: block;
+  font-size: 14px;
+  color: #494949;
+  padding: 0px 0px 8px 0px;
+}
+
+div.menu
+  > nav
+  > ul
+  > li.menu-item
+  > div.submenu-Support
+  > div.content
+  > div.right
+  a:hover {
+  color: #131313;
+}
+/* end menu Support */
+
+/* start MacBook Air 15" */
+div.main1 {
+  width: 100vw;
+  height: 692px;
+  margin-bottom: 8px;
+  padding-top: 88px;
+  text-align: center;
+  font-family: Roboto;
+  background: url(../media/hero_macbook_air_15_midnight__ct0pgwizvree_largetall.jpg)
+    center center/cover;
+  object-fit: cover;
+}
+
+div.main1 > div.text > h2 {
+  font-size: 58px;
+}
+
+div.main1 > div.text > p {
+  font-size: 28px;
+}
+
+div.main1 > div.text > a {
+  display: inline-block;
+  font-size: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.main1 > div.text > a:hover {
+  text-decoration: underline;
+}
+
+div.main1 > div.text > a > span {
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  color: #1472d0;
+}
+/* end MacBook Air 15" */
+
+/* start iPhone 14 Pro */
+div.main2 {
+  width: 100vw;
+  height: 692px;
+  margin-bottom: 8px;
+  padding-top: 44px;
+  text-align: center;
+  font-family: Roboto;
+  background: url(../media/hero_iphone14pro_spring__9xo85pm6sbmm_largetall.jpg)
+    center center/cover;
+  object-fit: cover;
+}
+
+div.main2 > div.text > h2 {
+  font-size: 58px;
+  color: white;
+}
+
+div.main2 > div.text > p {
+  font-size: 28px;
+  color: white;
+}
+
+div.main2 > div.text > a {
+  display: inline-block;
+  font-size: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.main2 > div.text > a:hover {
+  text-decoration: underline;
+}
+
+div.main2 > div.text > a > span {
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  color: #1472d0;
+}
+/* end iPhone 14 Pro */
+
+/* start iPhone 14 */
+div.main3 {
+  width: 100vw;
+  height: 692px;
+  margin-bottom: 8px;
+  padding-top: 44px;
+  text-align: center;
+  font-family: Roboto;
+  background: url(../media/hero_iphone14_yellow__eun20sn4imi6_largetall.jpg)
+    center center/cover;
+  object-fit: cover;
+}
+
+div.main3 > div.text > h2 {
+  font-size: 58px;
+}
+
+div.main3 > div.text > p {
+  font-size: 28px;
+}
+
+div.main3 > div.text > a {
+  display: inline-block;
+  font-size: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.main3 > div.text > a:hover {
+  text-decoration: underline;
+}
+
+div.main3 > div.text > a > span {
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  color: #1472d0;
+}
+/* end iPhone 14 */
+
+/* start poster */
+div.poster {
+  text-align: center;
+  padding: 8px;
+}
+
+div.poster > div.main4 {
+  width: 48vw;
+  height: 580px;
+  margin: 0px 4px;
+  background: url(../media/promo_bts2023_startframe__exvt2t1iuxme_large.jpg)
+    center center/cover;
+  padding-top: 44px;
+  text-align: center;
+  font-family: Roboto;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.main4 > div.text > h2 {
+  font-size: 36px;
+  padding: 0px 120px;
+}
+
+div.main4 > div.text > p {
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+div.main4 > div.text > a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.main4 > div.text > a:hover {
+  text-decoration: underline;
+}
+
+div.main4 > div.text > a > span {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 4px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.poster > div.main5 {
+  width: 48vw;
+  height: 580px;
+  margin: 0px 4px;
+  background: url(../media/promo_apple_watch_series_8_spring__d9hfvufh7hyu_large.jpg)
+    center center/cover;
+  padding-top: 44px;
+  text-align: center;
+  font-family: Roboto;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.main5 > div.text > h2 {
+  font-size: 36px;
+  padding: 0px 120px;
+  color: white;
+}
+
+div.main5 > div.text > p {
+  font-size: 20px;
+  padding-top: 8px;
+  color: white;
+}
+
+div.main5 > div.text > a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.main5 > div.text > a:hover {
+  text-decoration: underline;
+}
+
+div.main5 > div.text > a > span {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 4px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.poster > div.main6 {
+  width: 48vw;
+  height: 580px;
+  margin: 0px 4px;
+  background: url(../media/promo_apple_vision_pro__f4v4zp0sum2y_large.jpg)
+    center center/cover;
+  padding-top: 44px;
+  text-align: center;
+  font-family: Roboto;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.poster > div.main6 > div.text {
+  margin-top: 380px;
+}
+
+div.main6 > div.text > p.first {
+  font-size: 20px;
+}
+
+div.main6 > div.text > p.second {
+  color: #6e6e73;
+  padding: 8px 0px;
+}
+
+div.main6 > div.text > a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.main6 > div.text > a:hover {
+  text-decoration: underline;
+}
+
+div.main6 > div.text > a > span {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 4px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.poster > div.main7 {
+  width: 48vw;
+  height: 580px;
+  margin: 0px 4px;
+  background: url(../media/iphone_tradein_promo__d5au3rkw5kuq_large.jpg) center
+    center/cover;
+  padding-top: 44px;
+  text-align: center;
+  font-family: Roboto;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.main7 > div.text > p {
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+div.main7 > div.text > a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.main7 > div.text > a:hover {
+  text-decoration: underline;
+}
+
+div.main7 > div.text > a > span {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 4px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.poster > div.main8 {
+  width: 48vw;
+  height: 580px;
+  margin: 0px 4px;
+  background: url(../media/promo_apple_news_womens_world_cup__f72j3grkhguq_large.jpg)
+    center center/cover;
+  padding-top: 44px;
+  text-align: center;
+  font-family: Roboto;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.main8 > div.text > p {
+  font-size: 20px;
+}
+
+div.main8 > div.text > a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.main8 > div.text > a:hover {
+  text-decoration: underline;
+}
+
+div.main8 > div.text > a > span {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 4px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.poster > div.main9 {
+  width: 48vw;
+  height: 580px;
+  margin: 0px 4px;
+  background: url(../media/tile__cauwwcyyn9hy_large.jpg) center center/cover;
+  padding-top: 44px;
+  text-align: center;
+  font-family: Roboto;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.main9 > div.text > p {
+  font-size: 20px;
+  padding: 0px 200px;
+}
+
+div.main9 > div.text > a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1472d0;
+}
+
+div.main9 > div.text > a:hover {
+  text-decoration: underline;
+}
+
+div.main9 > div.text > a > span {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 4px;
+  text-decoration: none;
+  color: #1472d0;
+}
+/* end poster */
+
+/* start slider */
+div.slider {
+  width: 100%;
+  height: 667px;
+  overflow: hidden;
+}
+
+div.slider > div.items {
+  width: 1250px;
+  height: inherit;
+  background: url(../media/3.jpg) center center/cover;
+  margin: 0px auto;
+  vertical-align: top;
+}
+
+div.slider > div.items > div.item {
+  width: 1250px;
+  height: inherit;
+  filter: opacity(0.3);
+  display: inline-block;
+  background: url(../media/5.jpg) center center/cover;
+  position: relative;
+  left: -1264px;
+  top: 0;
+  vertical-align: top;
+}
+
+div.slider > div.items > div.item2 {
+  width: 1250px;
+  height: inherit;
+  display: inline-block;
+  filter: opacity(0.3);
+  background: url(../media/4.jpg) center center/cover;
+  position: relative;
+  left: 1264px;
+  top: -667px;
+  vertical-align: top;
+}
+
+div.mainredio {
+  width: 100%;
+  height: 24px;
+  margin-top: 8px;
+}
+
+div.mainredio > div.redios {
+  width: 60%;
+  height: inherit;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.mainredio > div.redios > div.redio {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: #bdbdbd;
+  border-radius: 50%;
+  margin: 0px 6px;
+  transition: all 300ms linear;
+}
+
+div.mainredio > div.redios > div.redio:hover {
+  background-color: #747474;
+  cursor: pointer;
+}
+
+div.mainredio > div.redios > div.redio1 {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: #747474;
+  border-radius: 50%;
+  margin: 0px 6px;
+  cursor: pointer;
+}
+/* end slider */
+
+/* start footer */
+div.footer {
+  width: 100vw;
+  background-color: #f5f5f7;
+  font-family: Roboto;
+  font-size: 13px;
+}
+
+div.footer > div.content {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 16px 24px 24px 0px;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+div.footer > div.content > p {
+  display: block;
+  text-align: left;
+  color: #6e6e73;
+  padding-top: 16px;
+}
+div.footer > div.content a {
+  color: #323232;
+}
+
+div.footer > div.links {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 16px 0px;
+}
+
+div.footer > div.links > div.link {
+  width: 200px;
+  display: inline-block;
+  margin: 0 auto;
+  padding-right: 80px;
+  vertical-align: top;
+}
+
+div.footer > div.links > div.link > p {
+  display: block;
+  padding-top: 16px;
+  font-family: Roboto-menu;
+  font-size: 13px;
+}
+
+div.footer > div.links > div.link > a {
+  display: block;
+  font-style: Roboto;
+  padding-top: 8px;
+  font-size: 12px;
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+div.footer > div.links > div.link > a:hover {
+  text-decoration: underline;
+}
+
+div.footer > div.text {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0px 0px 16px 0px;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+div.footer > div.text > p {
+  display: block;
+  text-align: left;
+  color: #6e6e73;
+  font-size: 13px;
+  padding-top: 16px;
+}
+
+div.footer > div.text > p > a {
+  color: #1472d0;
+}
+
+div.footer > div.end {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0px 0px 36px 0px;
+  border-bottom: 1px solid #d2d2d7;
+  vertical-align: top;
+}
+
+div.footer > div.end > div {
+  width: fit-content;
+  display: inline-block;
+  text-align: left;
+  color: #6e6e73;
+  font-size: 13px;
+  padding-top: 16px;
+  vertical-align: top;
+}
+
+div.footer > div.end > div > a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+div.footer > div.end > div > a:hover {
+  color: #6e6e73;
+  text-decoration: underline;
+}
+
+div.footer > div.end > div > p a {
+  padding: 0px 4px;
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+div.footer > div.end > div > p a:hover {
+  color: #6e6e73;
+  text-decoration: underline;
+}
+
+div.footer > div.end > div.e1 {
+  float: left;
+  margin-right: 48px;
+}
+
+div.footer > div.end > div.e3 {
+  float: right;
+}
+/* end footer */
+
+/* end menu */
+
+.swiper {
+  width: 100%;
+  height: 667px;
+  margin-bottom: 8px;
+  overflow: visible;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  display: block !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  opacity: 0.6 !important;
+  cursor: pointer !important;
+  transition: all 300ms ease !important;
+  margin: 0px 4px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 6px !important;
+  background-color: white !important;
+  opacity: 1 !important;
+}
